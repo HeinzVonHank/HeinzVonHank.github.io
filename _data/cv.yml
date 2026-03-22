@@ -15,6 +15,11 @@
 - title: Education
   type: time_table
   contents:
+    - title: Ph.D. in AI for Science
+      institution: Carnegie Mellon University
+      year: 2026 - 2030 (expected)
+      description:
+        - "Advisor: Olexandr Isayev"
     - title: M.S. in Automated Science
       institution: Carnegie Mellon University, School of Computer Science
       year: 2024 - 2026

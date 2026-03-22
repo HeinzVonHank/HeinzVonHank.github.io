@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Yuyang Wu",
-    "label": "Graduate Student",
+    "label": "Ph.D. Student",
     "image": "",
     "email": "yuyangwu@andrew.cmu.edu",
     "phone": "412-478-1680",
     "url": "https://HeinzVonHank.github.io",
-    "summary": "Graduate student at Carnegie Mellon University focusing on the intersection of artificial intelligence, computational chemistry, and natural language processing. Developing AI systems to enhance trustworthiness and reliability in scientific applications.",
+    "summary": "Ph.D. student at Carnegie Mellon University focusing on AI for Science, at the intersection of artificial intelligence, computational chemistry, and natural language processing.",
     "location": {
       "address": "5000 Forbes Ave",
       "postalCode": "PA 15213",
@@ -38,6 +38,17 @@
     }
   ],
   "education": [
+    {
+      "institution": "Carnegie Mellon University",
+      "location": "Pittsburgh, PA",
+      "url": "https://www.cmu.edu",
+      "area": "AI for Science",
+      "studyType": "Ph.D.",
+      "startDate": "2026-08-01",
+      "endDate": "2030-05-01",
+      "score": "",
+      "courses": []
+    },
     {
       "institution": "Carnegie Mellon University, School of Computer Science",
       "location": "Pittsburgh, PA",

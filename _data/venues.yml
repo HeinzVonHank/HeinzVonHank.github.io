@@ -1,9 +1,7 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"EMNLP":
+  url: https://aclanthology.org/venues/emnlp/
+  color: "#8B6914"
 
-"PhysRev":
-  url: https://journals.aps.org/
-
-"Vision":
-  color: "#009f36"
+"BIB":
+  url: https://academic.oup.com/bib
+  color: "#6B4F10"

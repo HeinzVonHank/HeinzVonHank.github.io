@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am Yuyang (Younger) Wu, a graduate student at Carnegie Mellon University. My research focuses on the intersection of artificial intelligence, computational chemistry, and natural language processing.
+I am Yuyang (Younger) Wu, a Ph.D. student in AI for Science at Carnegie Mellon University. My research focuses on the intersection of artificial intelligence, computational chemistry, and natural language processing.
 
 My work aims to enhance the trustworthiness and reliability of large language models in scientific applications, particularly in chemistry and drug discovery. I am passionate about developing AI systems that can assist researchers in understanding complex molecular structures and chemical processes.
 

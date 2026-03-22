@@ -4,19 +4,35 @@
 
 // Typography
 
-p,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  color: var(--global-text-color);
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+h1 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+p,
 em,
 div,
 li,
 span,
 strong {
   color: var(--global-text-color);
+}
+
+p {
+  line-height: 1.75;
+  letter-spacing: 0.01em;
 }
 
 hr {
@@ -38,10 +54,14 @@ table {
 a,
 table.table a {
   color: var(--global-theme-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
 
   &:hover {
-    color: var(--global-theme-color);
+    color: var(--global-hover-color);
     text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
   }
 
   &:hover:after :not(.nav-item.dropdown) {
@@ -198,7 +218,10 @@ ul.task-list input[type="checkbox"] {
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: monospace;
+    font-family: "Playfair Display", serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+    color: var(--global-text-color-light);
 
     p {
       display: inline-block;
@@ -248,6 +271,7 @@ ul.task-list input[type="checkbox"] {
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
+  letter-spacing: 0.03em;
 }
 
 .navbar .dropdown-menu {
@@ -285,10 +309,14 @@ ul.task-list input[type="checkbox"] {
 
   .navbar-brand {
     color: var(--global-text-color);
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    letter-spacing: 0.02em;
   }
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+    font-family: "Playfair Display", serif;
 
     &:hover {
       color: var(--global-hover-color);
@@ -475,6 +503,7 @@ ul.task-list input[type="checkbox"] {
 footer.fixed-bottom {
   background-color: var(--global-footer-bg-color);
   font-size: 0.75rem;
+  letter-spacing: 0.04em;
 
   .container {
     color: var(--global-footer-text-color);
@@ -498,6 +527,7 @@ footer.sticky-bottom {
   padding-top: 40px;
   padding-bottom: 40px;
   font-size: 0.9rem;
+  letter-spacing: 0.04em;
 
   .container {
     text-align: center;
