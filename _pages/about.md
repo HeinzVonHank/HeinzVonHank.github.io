@@ -27,8 +27,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am Yuyang (Younger) Wu, a Ph.D. student in AI for Science at Carnegie Mellon University. My research focuses on the intersection of artificial intelligence, computational chemistry, and natural language processing.
+I am Yuyang (Younger) Wu, a Ph.D. student in AI for Science at Carnegie Mellon University. My research focuses on agent self-evolution and recursive self-improvement of large language models.
 
-My work aims to enhance the trustworthiness and reliability of large language models in scientific applications, particularly in chemistry and drug discovery. I am passionate about developing AI systems that can assist researchers in understanding complex molecular structures and chemical processes.
+My work aims to build AI agents that can continuously evolve — refining their own capabilities, strategies, and knowledge through self-directed improvement. I am passionate about developing autonomous systems that learn from their own experience and iteratively become more capable, reliable, and general.
 
-My recent research includes developing benchmarks for evaluating LLM performance in chemistry tasks, as well as novel graph neural network architectures for molecular property prediction. I believe in the potential of AI to accelerate scientific discovery while maintaining high standards of accuracy and interpretability.
+My recent research explores how agents can bootstrap their own growth through recursive self-improvement, enabling AI to accelerate scientific discovery while continuously raising its own standards of accuracy and generalization.
