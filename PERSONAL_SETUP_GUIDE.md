@@ -77,6 +77,7 @@ google_scholar: your-google-scholar-id
 ### 5. 简历数据 - `_data/cv.yml`
 
 编辑你的简历信息，包括：
+
 - 教育背景
 - 工作经历
 - 技能
@@ -131,6 +132,7 @@ bundle exec jekyll serve
 ## 需要帮助？
 
 如果遇到问题，可以：
+
 1. 查看 [al-folio 文档](https://github.com/alshedivat/al-folio)
 2. 检查 GitHub Actions 构建日志
 3. 参考 Jekyll 官方文档
