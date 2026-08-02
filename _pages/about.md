@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am Yuyang (Younger) Wu, a Ph.D. student in AI for Science at Carnegie Mellon University. My research focuses on agent self-evolution and recursive self-improvement of large language models.
+I am Yuyang (Younger) Wu, a Ph.D. student in AI for Science at Carnegie Mellon University, where I also earned my M.S. from the School of Computer Science. My research focuses on agent self-evolution and recursive self-improvement of large language models.
 
 My work aims to build AI agents that can continuously evolve — refining their own capabilities, strategies, and knowledge through self-directed improvement. I am passionate about developing autonomous systems that learn from their own experience and iteratively become more capable, reliable, and general.
 
