@@ -1511,3 +1511,31 @@ article {
     font-size: 12px;
   }
 }
+
+// Light mode: white reading column fading into warm yellow at the page edges
+
+html:not([data-theme="dark"]) {
+  --global-bg-color: #ffffff;
+  --global-card-bg-color: #ffffff;
+  --global-newsletter-bg-color: #ffffff;
+  --page-edge-color: #f7ecd2;
+  --page-gradient: linear-gradient(
+    to right,
+    var(--page-edge-color) calc(50% - #{$max-content-width} / 2 - 160px),
+    #ffffff calc(50% - #{$max-content-width} / 2 - 40px),
+    #ffffff calc(50% + #{$max-content-width} / 2 + 40px),
+    var(--page-edge-color) calc(50% + #{$max-content-width} / 2 + 160px)
+  );
+
+  body,
+  .navbar {
+    background: var(--page-gradient);
+    background-attachment: fixed;
+  }
+}
+
+// Bold text inside links keeps the link color
+a strong,
+a b {
+  color: inherit;
+}
