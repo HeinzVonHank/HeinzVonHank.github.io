@@ -1567,6 +1567,41 @@ html:not([data-theme="dark"]) {
   }
 }
 
+// Animated version of the backdrop (assets/js/water-flow.js). The script adds
+// .water-flow-active to <html> only when it can run; otherwise the static
+// backdrop above stays in place.
+#water-flow {
+  display: none;
+}
+
+html.water-flow-active:not([data-theme="dark"]) {
+  #water-flow {
+    display: block;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  body::before {
+    display: none;
+  }
+
+  // Let the animated margins show through; keep the reading column opaque
+  .navbar {
+    background-image: linear-gradient(
+      to right,
+      transparent calc(50vw - #{$max-content-width * 0.5 + 70px}),
+      #ffffff calc(50vw - #{$max-content-width * 0.5 + 10px}),
+      #ffffff calc(50vw + #{$max-content-width * 0.5 + 10px}),
+      transparent calc(50vw + #{$max-content-width * 0.5 + 70px})
+    );
+    background-color: transparent;
+  }
+}
+
 // "A Thousand Li of Rivers and Mountains" (Wang Ximeng, 1113; public domain)
 // slowly panning along the bottom of every page
 
