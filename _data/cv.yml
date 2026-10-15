@@ -5,8 +5,6 @@
       value: Yuyang Wu
     - name: Email
       value: yuyangwu@andrew.cmu.edu
-    - name: Phone
-      value: 412-478-1680
     - name: Location
       value: Pittsburgh, PA, USA
     - name: Affiliation
@@ -75,32 +73,12 @@
         - Developed Transformer-based local augmentation module
         - Improved performance across 8 benchmark datasets
 
-- title: Projects
-  type: time_table
-  contents:
-    - title: "CHEM-AL: Active Learning for Molecular Property Prediction"
-      institution: Carnegie Mellon University
-      year: Feb 2025 - Apr 2025
-      description:
-        - Built active learning framework with uncertainty, QBC, and diversity sampling
-        - Implemented Naïve Bayes and MLP (with MC Dropout) on MoleculeNet datasets
-        - Achieved 50% reduction in labeling requirements versus random sampling
-
-    - title: Computational Prediction of Protein–Protein Interactions (PPI)
-      institution: Carnegie Mellon University
-      year: Feb 2025 - Apr 2025
-      description:
-        - Designed deep learning pipelines for SHS27K benchmark (16,912 interactions)
-        - Developed ProBERT-BiGRU-Attention and Transformer-based models
-        - Achieved 83% accuracy and AUC 0.91
-        - Built GNN capturing structural context for unseen proteins
-
 - title: Publications
   type: list
   contents:
-    - "<b>Yuyang Wu</b>, Jinhui Ye, Shuhao Zhang, Lu Dai, Yonatan Bisk, Olexandr Isayev*. <i>MolErr2Fix: Benchmarking LLM Trustworthiness in Chemistry via Modular Error Detection, Localization, Explanation, and Revision.</i> <b>EMNLP 2025</b> (Poster)."
+    - "<b>Yuyang Wu</b>, Jinhui Ye, Shuhao Zhang, Lu Dai, Yonatan Bisk, Olexandr Isayev*. <i>MolErr2Fix: Benchmarking LLM Trustworthiness in Chemistry via Modular Error Detection, Localization, Explanation, and Revision.</i> <b>EMNLP 2025</b> (Oral)."
     - "Shen Han#, Haitao Fu#, <b>Yuyang Wu</b>, et al. <i>HimGNN: Hierarchical Molecular Graph Representation Learning Framework for Property Prediction.</i> <b>Briefings in Bioinformatics</b>, 2023. DOI: 10.1093/bib/bbad305."
-    - "Jianye Yang#, Haitao Fu#, Feiyang Xue, Menglu Li, <b>Yuyang Wu</b>, et al. <i>Multi-View Representation Learning for Identification of Novel Cancer Genes and Their Causative Biological Mechanisms.</i> <b>Briefings in Bioinformatics</b>, 2024. DOI: 10.1093/bib/bbad418."
+    - "Jianye Yang#, Haitao Fu#, Feiyang Xue, Menglu Li, <b>Yuyang Wu</b>, et al. <i>Multi-View Representation Learning for Identification of Novel Cancer Genes and Their Causative Biological Mechanisms.</i> <b>Briefings in Bioinformatics</b>, 2024. DOI: 10.1093/bib/bbae418."
 
 - title: Technical Skills
   type: map

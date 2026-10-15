@@ -59,10 +59,14 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">publications</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
+
+    <!-- Experience, honors, etc. (edit _includes/about_extra.md) -->
+    {% capture about_extra %}{% include about_extra.md %}{% endcapture %}
+    {{ about_extra | markdownify }}
 
     <!-- Social -->
     {% if page.social %}

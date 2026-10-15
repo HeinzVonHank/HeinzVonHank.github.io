@@ -1,3 +1,9 @@
+<h3 class="pub-subheading">selected</h3>
 <div class="publications">
   {% bibliography --group_by none --query @*[selected=true]* %}
+</div>
+
+<h3 class="pub-subheading">others</h3>
+<div class="publications">
+  {% bibliography --group_by none --query @*[selected!=true]* %}
 </div>

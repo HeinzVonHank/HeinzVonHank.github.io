@@ -796,6 +796,17 @@ footer.sticky-bottom {
         font-weight: bolder;
       }
 
+      .oral-tag {
+        display: inline-block;
+        padding: 0 0.45em;
+        border-radius: 0.25rem;
+        background-color: #d9381e;
+        color: #fff;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 0.85em;
+      }
+
       .author {
         a {
           border-bottom: 1px dashed var(--global-theme-color);
@@ -1451,5 +1462,52 @@ figure.cover {
   /* mouse over link */
   a.cover-link:hover {
     color: #23212d !important;
+  }
+}
+
+// Compact typography (sizes modeled on a minimal academic homepage)
+
+body {
+  font-size: 15px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.post-header .post-title {
+  font-size: 28px;
+}
+
+.post-header .desc {
+  font-size: 15px;
+}
+
+article {
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
+}
+
+.news table td {
+  font-size: 14px;
+}
+
+.publications ol.bibliography li {
+  .title {
+    font-size: 15px;
+  }
+
+  .author,
+  .periodical {
+    font-size: 14px;
+  }
+
+  .links .btn {
+    font-size: 12px;
   }
 }

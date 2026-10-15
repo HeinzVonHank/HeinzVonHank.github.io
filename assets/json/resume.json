@@ -4,17 +4,19 @@
     "label": "Ph.D. Student",
     "image": "",
     "email": "yuyangwu@andrew.cmu.edu",
-    "phone": "412-478-1680",
     "url": "https://youngerwu.com",
-    "summary": "Ph.D. student at Carnegie Mellon University focusing on AI for Science, at the intersection of artificial intelligence, computational chemistry, and natural language processing.",
+    "summary": "Ph.D. student in AI for Science at Carnegie Mellon University, advised by Olexandr Isayev. Research on self-evolving LLM agents, efficient reasoning, and trustworthy LLMs for chemistry and scientific discovery.",
     "location": {
-      "address": "5000 Forbes Ave",
-      "postalCode": "PA 15213",
       "city": "Pittsburgh",
-      "countryCode": "US",
-      "region": "Pennsylvania"
+      "region": "Pennsylvania",
+      "countryCode": "US"
     },
     "profiles": [
+      {
+        "network": "Google Scholar",
+        "username": "Yuyang Wu",
+        "url": "https://scholar.google.com/citations?user=P6zIb1MAAAAJ"
+      },
       {
         "network": "GitHub",
         "username": "HeinzVonHank",
@@ -29,11 +31,14 @@
       "url": "https://www.cmu.edu",
       "startDate": "2024-08-01",
       "endDate": "Present",
-      "summary": "Conducting research on improving trustworthiness of large language models in chemistry and developing large-scale quantum chemistry datasets.",
+      "summary": "Research on LLM reasoning, agents, and trustworthy AI for chemistry in the Isayev Lab.",
       "highlights": [
-        "Led MolErr2Fix benchmark project for evaluating LLM trustworthiness in chemistry",
-        "Created multi-million-entry quantum chemistry dataset",
-        "Collaborated with Isayev and CLAW research groups"
+        "Led MolErr2Fix, a benchmark for LLM trustworthiness in chemistry (EMNLP 2025 Oral)",
+        "Led ChemCost, a benchmark for evaluating LLM agents on chemical cost reasoning (NeurIPS 2026)",
+        "Led CLORE, content-level trajectory optimization for efficient RL reasoning",
+        "Co-led KARA, sliding-window KV cache compression for efficient reasoning LLM serving",
+        "Created a multi-million-entry quantum chemistry dataset",
+        "Collaborated with the CLAW group (CMU LTI), Pitt, and HKUST"
       ]
     }
   ],
@@ -85,25 +90,81 @@
   ],
   "publications": [
     {
+      "name": "Can Agents Price a Reaction? Evaluating LLMs on Chemical Cost Reasoning",
+      "publisher": "NeurIPS 2026",
+      "releaseDate": "2026-09-25",
+      "url": "https://arxiv.org/abs/2605.07251",
+      "summary": "Y. Wu, Y. Huang, S. Shen, X. Wang, S. Zhang, Q. Xue, W. Liu, R. Gao, J. Ma, X. Zhang, O. Isayev"
+    },
+    {
+      "name": "Reasoning Path and Latent State Analysis for Multi-view Visual Spatial Reasoning: A Cognitive Science Perspective",
+      "publisher": "ECCV 2026",
+      "releaseDate": "2025-12-02",
+      "url": "https://arxiv.org/abs/2512.02340",
+      "summary": "Q. Xue, W. Liu, S. Wang, H. Wang, Y. Wu, W. Gao"
+    },
+    {
+      "name": "MolecularCanvas: LLM-assisted Small-Molecule Drug Discovery via Structure-Guided Constraints",
+      "publisher": "UIST 2026",
+      "releaseDate": "2026-08-01",
+      "url": "https://arxiv.org/abs/2608.00393",
+      "summary": "H. Dong, R. Sheng, S. Zhang, Y. Sun, D. Wu, H. Chao, O. Isayev, H. Qu, Y. Wu† (co-corresponding author), Y. Lin"
+    },
+    {
+      "name": "VeriLLMed: Interactive Visual Debugging of Medical Large Language Models with Knowledge Graphs",
+      "publisher": "IEEE VIS 2026",
+      "releaseDate": "2026-07-27",
+      "url": "https://arxiv.org/abs/2604.23356",
+      "summary": "Y. Xiang, X. Mao, R. Sheng, Z. Chen, Z. Zang, Y. Wu, H. Zeng, H. Qu, Y. Sun, Y. Lin"
+    },
+    {
+      "name": "KGRxn-LLM: Knowledge Graph Enhanced Large Language Models for Molecular Reaction Reasoning",
+      "publisher": "BioNLP 2026 (ACL Workshop)",
+      "releaseDate": "2026-07-31",
+      "url": "https://aclanthology.org/2026.bionlp-1.22/",
+      "summary": "W. Liu, Q. Xue, Y. Wu, O. Isayev, N. Miskov-Zivanov"
+    },
+    {
+      "name": "High-throughput physics-based enzyme engineering",
+      "publisher": "bioRxiv preprint (under review)",
+      "releaseDate": "2026-09-17",
+      "url": "https://doi.org/10.64898/2026.09.15.751901",
+      "summary": "X. Wang, X. Qiu, Y. Wu, T. Niu, S. Zhang, R. Gao, I. Cho, H. Tang, K. Hu, X. Lei, O. Isayev, J. Wang"
+    },
+    {
+      "name": "KARA: Efficient Reasoning LLM Serving via Sliding-Window KV Cache Compression",
+      "publisher": "arXiv preprint",
+      "releaseDate": "2026-05-01",
+      "url": "https://arxiv.org/abs/2607.01237",
+      "summary": "S. Han*, Y. Wu* (equal contribution), J. Yu, O. Isayev"
+    },
+    {
+      "name": "CLORE: Content-Level Optimization for Reasoning Efficiency",
+      "publisher": "arXiv preprint",
+      "releaseDate": "2026-05-21",
+      "url": "https://arxiv.org/abs/2605.22211",
+      "summary": "Y. Wu, Q. Xue, G. Lu, W. Liu, Z. Wang, M. Li, O. Isayev"
+    },
+    {
       "name": "MolErr2Fix: Benchmarking LLM Trustworthiness in Chemistry via Modular Error Detection, Localization, Explanation, and Revision",
-      "publisher": "EMNLP 2025 (Oral Presentation)",
+      "publisher": "EMNLP 2025 (Oral)",
       "releaseDate": "2025-08-20",
-      "url": "",
-      "summary": "Developed comprehensive benchmark for evaluating large language models' trustworthiness in chemistry through modular error detection, localization, explanation, and revision tasks."
+      "url": "https://aclanthology.org/2025.emnlp-main.977/",
+      "summary": "Y. Wu, J. Ye, S. Zhang, L. Dai, Y. Bisk, O. Isayev"
     },
     {
-      "name": "HimGNN: Hierarchical Molecular Graph Representation Learning Framework for Property Prediction",
+      "name": "Multiview Representation Learning for Identification of Novel Cancer Genes and Their Causative Biological Mechanisms",
       "publisher": "Briefings in Bioinformatics",
-      "releaseDate": "2023-01-01",
+      "releaseDate": "2024-09-01",
+      "url": "https://doi.org/10.1093/bib/bbae418",
+      "summary": "J. Yang, H. Fu, F. Xue, M. Li, Y. Wu, Z. Yu, H. Luo, J. Gong, X. Niu, W. Zhang"
+    },
+    {
+      "name": "HimGNN: A Novel Hierarchical Molecular Graph Representation Learning Framework for Property Prediction",
+      "publisher": "Briefings in Bioinformatics",
+      "releaseDate": "2023-09-01",
       "url": "https://doi.org/10.1093/bib/bbad305",
-      "summary": "Designed hierarchical GNN with atom- and motif-level features and Transformer-based local augmentation module, improving performance across 8 benchmark datasets."
-    },
-    {
-      "name": "Multi-View Representation Learning for Identification of Novel Cancer Genes and Their Causative Biological Mechanisms",
-      "publisher": "Briefings in Bioinformatics",
-      "releaseDate": "2024-01-01",
-      "url": "https://doi.org/10.1093/bib/bbad418",
-      "summary": "Integrated multi-omics data (genomic, transcriptomic, epigenomic, PPI) to identify 74 high-confidence candidate cancer genes."
+      "summary": "S. Han, H. Fu, Y. Wu, G. Zhao, Z. Song, F. Huang, Z. Zhang, S. Liu, W. Zhang"
     }
   ],
   "skills": [
@@ -132,30 +193,27 @@
       "keywords": ["Linux/Unix", "Bash", "MySQL", "Git"]
     }
   ],
-  "projects": [
+  "awards": [
     {
-      "name": "CHEM-AL: Active Learning for Molecular Property Prediction",
-      "summary": "Built active learning framework with uncertainty, QBC, and diversity sampling. Implemented Naïve Bayes and MLP (with MC Dropout) on MoleculeNet datasets.",
-      "highlights": ["Achieved 50% reduction in labeling requirements versus random sampling"],
-      "startDate": "2025-02-01",
-      "endDate": "2025-04-01",
-      "url": ""
+      "title": "Samuel S. Wang Award"
     },
     {
-      "name": "Computational Prediction of Protein–Protein Interactions (PPI)",
-      "summary": "Designed deep learning pipelines for SHS27K benchmark (16,912 interactions). Developed ProBERT-BiGRU-Attention and Transformer-based models.",
-      "highlights": ["Achieved 83% accuracy and AUC 0.91", "Built GNN capturing structural context for unseen proteins"],
-      "startDate": "2025-02-01",
-      "endDate": "2025-04-01",
-      "url": ""
+      "title": "Oral Presentation",
+      "date": "2025-11-01",
+      "awarder": "EMNLP 2025",
+      "summary": "MolErr2Fix selected for oral presentation."
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Academic Service",
+      "position": "Conference Reviewer",
+      "summary": "NeurIPS, ICLR, ACL Rolling Review (ARR), EMNLP"
     },
     {
-      "name": "Large-Scale Multi-Property Quantum Chemistry Dataset",
-      "summary": "Created a multi-million-entry dataset including energies, forces, dipoles, quadrupoles. Benchmarked SchNet, PaiNN, E2GNN, Equiformer for molecular property prediction.",
-      "highlights": ["Preparing publication and open dataset release"],
-      "startDate": "2025-04-01",
-      "endDate": "Present",
-      "url": ""
+      "organization": "Academic Service",
+      "position": "Journal Reviewer",
+      "summary": "American Chemical Society (ACS) journals"
     }
   ]
 }

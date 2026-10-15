@@ -9,9 +9,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>5000 Forbes Ave</p>
-    <p> </p>
-    <p>Pittsburgh, PA 15213</p>
+    <p>Ph.D. Student, Carnegie Mellon University</p>
+    <p>yuyangwu [at] andrew.cmu.edu</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,8 +26,15 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am Yuyang (Younger) Wu, a Ph.D. student in AI for Science at Carnegie Mellon University, where I also earned my M.S. from the School of Computer Science. My research focuses on agent self-evolution and recursive self-improvement of large language models.
+<p style="font-size: 1.05rem;">
+<a href="mailto:yuyangwu@andrew.cmu.edu">Email</a> &nbsp;/&nbsp;
+<a href="https://scholar.google.com/citations?user=P6zIb1MAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
+<a href="https://github.com/HeinzVonHank">GitHub</a> &nbsp;/&nbsp;
+<a href="/cv/">CV</a>
+</p>
 
-My work aims to build AI agents that can continuously evolve — refining their own capabilities, strategies, and knowledge through self-directed improvement. I am passionate about developing autonomous systems that learn from their own experience and iteratively become more capable, reliable, and general.
+I am Yuyang (Younger) Wu, 吴雨阳, a Ph.D. student in AI for Science at Carnegie Mellon University, where I am fortunate to be advised by Prof. [Olexandr Isayev](https://olexandrisayev.com/). I received my M.S. from CMU's School of Computer Science. My work so far has focused on making LLM reasoning **trustworthy and efficient** for chemistry and science, from benchmarking chemical errors and cost reasoning to compressing and editing long reasoning traces. Building on this, I am now working toward **self-evolving scientific agents**: systems that keep improving their own capabilities, strategies, and knowledge from experience to accelerate scientific discovery.
 
-My recent research explores how agents can bootstrap their own growth through recursive self-improvement, enabling AI to accelerate scientific discovery while continuously raising its own standards of accuracy and generalization.
+I have also been fortunate to collaborate with [Graham Neubig](https://www.phontron.com/) on the AI Science Foundry and cloud lab for autonomous scientific experimentation, [Manling Li](https://limanling.github.io/) on efficient LLM reasoning, [Yonatan Bisk](https://yonatanbisk.com/) on trustworthy LLMs for chemistry, and [Jian Ma](https://www.cs.cmu.edu/~jianma/) and [Xiangliang Zhang](https://sites.nd.edu/xiangliang-zhang/) on evaluating LLM agents for chemical reasoning. Beyond academia, I am collaborating with [**NVIDIA**](https://www.nvidia.com/) on Scientific Agents, and previously worked with [**OpenAI**](https://openai.com/) to improve the chemical capabilities of frontier LLMs, focusing on rigorous chemical reasoning and reliable domain knowledge.
+
+我享受充分的睡眠和多交朋友带来的创造力。
