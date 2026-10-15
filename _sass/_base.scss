@@ -1518,22 +1518,33 @@ article {
 // lives on a fixed layer (body::before) so scrolling never repaints it. Each
 // wave motif is scaled to its side margin (about 2.2x its width) and centred.
 
+// Written as regular properties (not a custom property) so Sass keeps the
+// spaces inside calc() when it compresses the CSS.
+@mixin page-backdrop {
+  background-color: #faf1da;
+  background-image: linear-gradient(
+      to right,
+      transparent calc(50vw - #{$max-content-width * 0.5 + 70px}),
+      #ffffff calc(50vw - #{$max-content-width * 0.5 + 10px}),
+      #ffffff calc(50vw + #{$max-content-width * 0.5 + 10px}),
+      transparent calc(50vw + #{$max-content-width * 0.5 + 70px})
+    ),
+    url("/assets/img/shuitu-cengbo.webp"), url("/assets/img/shuitu-yunshu.webp");
+  background-position:
+    0 0,
+    calc(#{$max-content-width * 0.19} - 19vw) calc(50vh - (110vw - #{$max-content-width * 1.1}) / 3.36),
+    calc(6.8vw + #{$max-content-width * 0.932}) calc(50vh - (110vw - #{$max-content-width * 1.1}) / 3.71);
+  background-size:
+    100% 100%,
+    calc(110vw - #{$max-content-width * 1.1}) auto,
+    calc(110vw - #{$max-content-width * 1.1}) auto;
+  background-repeat: no-repeat;
+}
+
 html:not([data-theme="dark"]) {
   --global-bg-color: #ffffff;
   --global-card-bg-color: #ffffff;
   --global-newsletter-bg-color: #ffffff;
-  --page-backdrop: linear-gradient(
-      to right,
-      transparent calc(50vw - #{$max-content-width} / 2 - 70px),
-      #ffffff calc(50vw - #{$max-content-width} / 2 - 10px),
-      #ffffff calc(50vw + #{$max-content-width} / 2 + 10px),
-      transparent calc(50vw + #{$max-content-width} / 2 + 70px)
-    ),
-    url("/assets/img/shuitu-cengbo.webp") left calc(-19vw + #{$max-content-width * 0.19}) top
-      calc(50vh - (110vw - #{$max-content-width * 1.1}) / 3.36) / calc(110vw - #{$max-content-width * 1.1}) auto no-repeat,
-    url("/assets/img/shuitu-yunshu.webp") left calc(6.8vw + #{$max-content-width * 0.932}) top
-      calc(50vh - (110vw - #{$max-content-width * 1.1}) / 3.71) / calc(110vw - #{$max-content-width * 1.1}) auto no-repeat,
-    #faf1da;
 
   body {
     background: transparent;
@@ -1544,7 +1555,7 @@ html:not([data-theme="dark"]) {
     position: fixed;
     inset: 0;
     z-index: -1;
-    background: var(--page-backdrop);
+    @include page-backdrop;
     will-change: transform;
     transform: translateZ(0);
     pointer-events: none;
@@ -1552,7 +1563,7 @@ html:not([data-theme="dark"]) {
 
   // The fixed navbar sits at the viewport origin, so the same backdrop lines up
   .navbar {
-    background: var(--page-backdrop);
+    @include page-backdrop;
   }
 }
 
