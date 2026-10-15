@@ -1512,25 +1512,82 @@ article {
   }
 }
 
-// Light mode: white reading column fading into warm yellow at the page edges
+// Light mode: white reading column flanked by gold-toned leaves from Ma Yuan's
+// "Water" album (Southern Song, public domain): "Layers of Waves" (层波叠浪) on
+// the left and "Clouds Unfurl, Waves Roll" (云舒浪卷) on the right. The backdrop
+// lives on a fixed layer (body::before) so scrolling never repaints it. Each
+// wave motif is scaled to its side margin (about 2.2x its width) and centred.
 
 html:not([data-theme="dark"]) {
   --global-bg-color: #ffffff;
   --global-card-bg-color: #ffffff;
   --global-newsletter-bg-color: #ffffff;
-  --page-edge-color: #f7ecd2;
-  --page-gradient: linear-gradient(
-    to right,
-    var(--page-edge-color) calc(50% - #{$max-content-width} / 2 - 160px),
-    #ffffff calc(50% - #{$max-content-width} / 2 - 40px),
-    #ffffff calc(50% + #{$max-content-width} / 2 + 40px),
-    var(--page-edge-color) calc(50% + #{$max-content-width} / 2 + 160px)
-  );
+  --page-backdrop: linear-gradient(
+      to right,
+      transparent calc(50vw - #{$max-content-width} / 2 - 70px),
+      #ffffff calc(50vw - #{$max-content-width} / 2 - 10px),
+      #ffffff calc(50vw + #{$max-content-width} / 2 + 10px),
+      transparent calc(50vw + #{$max-content-width} / 2 + 70px)
+    ),
+    url("/assets/img/shuitu-cengbo.webp") left calc(-19vw + #{$max-content-width * 0.19}) top
+      calc(50vh - (110vw - #{$max-content-width * 1.1}) / 3.36) / calc(110vw - #{$max-content-width * 1.1}) auto no-repeat,
+    url("/assets/img/shuitu-yunshu.webp") left calc(6.8vw + #{$max-content-width * 0.932}) top
+      calc(50vh - (110vw - #{$max-content-width * 1.1}) / 3.71) / calc(110vw - #{$max-content-width * 1.1}) auto no-repeat,
+    #faf1da;
 
-  body,
+  body {
+    background: transparent;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: var(--page-backdrop);
+    will-change: transform;
+    transform: translateZ(0);
+    pointer-events: none;
+  }
+
+  // The fixed navbar sits at the viewport origin, so the same backdrop lines up
   .navbar {
-    background: var(--page-gradient);
-    background-attachment: fixed;
+    background: var(--page-backdrop);
+  }
+}
+
+// "A Thousand Li of Rivers and Mountains" (Wang Ximeng, 1113; public domain)
+// slowly panning along the bottom of every page
+
+.landscape-scroll {
+  height: 200px;
+  margin-top: 3rem;
+  overflow: hidden;
+  // Fade the painting itself in, so whatever sits behind it shows through
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 110px);
+  mask-image: linear-gradient(to bottom, transparent 0, #000 110px);
+
+  .landscape-track {
+    width: 5505px; // image is 6055x220, shown at 200px tall
+    height: 100%;
+    background: url("/assets/img/qianli-jiangshan.jpg") left center / auto 100% no-repeat;
+    will-change: transform;
+    animation: landscape-pan 240s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes landscape-pan {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(100vw - 100%));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landscape-scroll .landscape-track {
+    animation: none;
   }
 }
 
